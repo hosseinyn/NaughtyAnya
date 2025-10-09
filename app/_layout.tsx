@@ -1,24 +1,21 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import IndexScreen from './index';
+import GameScreen from './game';
 
-export const unstable_settings = {
-  anchor: '(tabs)',
+type RootStackParamList = {
+  Home: undefined;
+  Game: undefined;
 };
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
+export default function App() {
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={IndexScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="Game" component={GameScreen} options={{ headerShown: false }} />
+      </Stack.Navigator>
   );
 }
