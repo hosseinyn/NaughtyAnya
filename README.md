@@ -12,7 +12,7 @@ This project is a fun 2d game about anya forger , An anime character from 2016. 
 
 ## 🤔 How to play ?
 
-**You can download the latest version of game (apk file) from releases or you can build it with `expo eas build` **
+**You can download the latest version of game (apk file) from releases or you can build it with `expo eas build`**
 
 ## 🎮 Game rules :
 1- 🕹️ Just tap on Anya's face and get score. But be careful and look at her  face every time because she has a bad mode that can destroy all of your scores.
