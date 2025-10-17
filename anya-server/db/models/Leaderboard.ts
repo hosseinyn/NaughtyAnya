@@ -12,5 +12,8 @@ export class Leaderboard extends BaseEntity {
   @Column()
   score : string
 
+  @Column({nullable: true})
+  age : number
+
 
 }

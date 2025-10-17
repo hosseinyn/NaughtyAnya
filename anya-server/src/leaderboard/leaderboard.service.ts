@@ -52,13 +52,21 @@ export class LeaderboardService {
             })
 
             if (found_user) {
+
                 found_user.score = data.score;
+
                 await leaderboardRepository.save(found_user);
 
             } else {
+
+                const user_data = await leaderboardRepository.findOneBy({
+                    username: data.username
+                })
+
                 const create_score = leaderboardRepository.create({
                     username: data.username,
-                    score: data.score
+                    score: data.score,
+                    age: user_data?.age
                 })
 
                 await leaderboardRepository.save(create_score);
