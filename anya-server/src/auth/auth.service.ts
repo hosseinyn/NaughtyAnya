@@ -9,7 +9,7 @@ import bcrypt from 'bcrypt';
 export class AuthService {
   constructor(private jwtService: JwtService) {}
 
-  async login(user: any) {
+  async login(user: any) {                  
     const userRepository = AppDataSource.getRepository(User);
 
     const get_user = await userRepository.findOneBy({
