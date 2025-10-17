@@ -3,6 +3,9 @@ import { DataSource } from "typeorm";
 import { Leaderboard } from "./models/Leaderboard";
 import { User } from "./models/Users";
 
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 export const AppDataSource = new DataSource({
     type: "postgres",
     host: process.env.POSTGRES_HOST || "localhost",
