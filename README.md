@@ -3,6 +3,7 @@
 ![](https://github.com/hosseinyn/NaughtyAnya/blob/main/assets/images/anya.png?raw=true)
 
  ![](https://img.shields.io/badge/Javascript-black?style=for-the-badge&logo=javascript&logoColor=yellow)  ![](https://img.shields.io/badge/Typescript-black?style=for-the-badge&logo=typescript&logoColor=blue)  ![](https://img.shields.io/badge/REACT-NATIVE-black?style=for-the-badge&logo=react)   ![](https://img.shields.io/badge/ANDROID-black?style=for-the-badge&logo=android) 
+ ![](https://img.shields.io/badge/NESTJS-black?style=for-the-badge&logo=nestjs)   ![](https://img.shields.io/badge/TYPE-ORM-black?style=for-the-badge&logo=typeorm) ![](https://img.shields.io/badge/POSTGRESQL-black?style=for-the-badge&logo=postgresql)  ![](https://img.shields.io/badge/SOCKETIO-black?style=for-the-badge&logo=socket.io) 
  ![](https://img.shields.io/static/v1?label=Twitter&message=Updates-and-information&color=ff&style=flat)
 
 *Check twitter for more projects or updates*
